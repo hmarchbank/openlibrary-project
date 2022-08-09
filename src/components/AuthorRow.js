@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom"
 
 const AuthorRow = ({author}) => {
     return (<>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className="author-row">
             <h1>{author.name}</h1>
-            <NavLink to={`/author/${author.key}`}>
+            <NavLink to={`/author/${author.key}`} state={{author: author}}>
                 <button>More details</button>
             </NavLink>
         </div>
