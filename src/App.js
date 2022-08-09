@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom"
 
-import Main from './pages/Main';
+import SearchPage from './pages/SearchPage';
+import AuthorPage from './pages/AuthorPage'
+
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/author/:authorId" element={<AuthorPage />} />
+
+      </Routes>
     </div>
   );
 }
