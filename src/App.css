@@ -1,13 +1,33 @@
 .App {
-  text-align: center
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-body{
+button,
+input,
+option {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
   margin: 0 auto;
   background: rgb(94, 73, 73);
   color: white;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
+}
+
+button {
+  border: 0.2rem rgb(94, 73, 73) solid;
+}
+
+button:hover {
+  border: 0.2rem white solid;
+  background: rgb(94, 73, 73);
+  color: white;
+  cursor: pointer;
 }

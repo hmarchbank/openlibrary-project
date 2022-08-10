@@ -1,57 +1,61 @@
-.search-form{
-    background: grey;
-    width: 80%;
-    margin: 0 auto;
-    color: white;
-    padding: 2rem;
-    text-align: start;
+.search-form {
+  background: grey;
+  width: 80%;
+  margin: 0 auto 4vw auto;
+  color: white;
+  padding: 2rem;
+  text-align: start;
+  border: 0.2rem solid white;
 }
 
-.search-form h1{
-    font-size: 2.5rem;
-    max-width: 60%;
+.search-inputs,
+#errorMessage {
+  width: 80%;
+  margin: 1.2rem auto;
+  padding: 1rem;
+  border: 0.5rem solid white;
 }
 
-label, input{
-    font-size: 2rem;
-    margin: 1rem 0;
+.search-form h1 {
+  font-size: 2.5rem;
+  max-width: 60%;
 }
 
-select{
-    font-size: 1.5rem;
+label,
+input {
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
-input{
-    width: 80%;
-    padding: .4rem;
+select {
+  font-size: 1.5rem;
 }
 
-#errorMessage{
-    padding: 2rem;
-    color: rgb(255, 208, 0);
-    background: grey;
-    width: 80%;
-    margin: 0 auto;
+input {
+  width: 80%;
+  padding: 0.4rem;
 }
 
-.author-row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 1.2rem auto;
-    padding: 1rem;
-    border: .5rem solid white;
-    box-shadow: 5px 10px #c0aeae;
+#errorMessage {
+  padding: 2rem;
+  color: rgb(255, 208, 0);
+  background: grey;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.author-row button{
-    padding: .5rem 1rem;
-    font-size: 1.5rem;
-    border: none;
+.author-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1.2rem auto;
+  padding: 1rem;
+  border: 0.5rem solid white;
+  box-shadow: 5px 10px #c0aeae;
 }
 
-.author-row button:hover{
-    background-color: bisque;
-    cursor: pointer;
+.author-row button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
 }

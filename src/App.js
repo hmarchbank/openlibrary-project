@@ -1,9 +1,8 @@
-import './App.css';
-import { Routes, Route} from "react-router-dom"
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
-import SearchPage from './pages/Search-page/SearchPage';
-import AuthorPage from './pages/AuthorPage'
-
+import SearchPage from "./pages/Search-page/SearchPage";
+import AuthorPage from "./pages/Author-page/AuthorPage";
 
 function App() {
   return (
