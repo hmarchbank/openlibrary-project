@@ -18,7 +18,8 @@
 }
 
 .search-form h1 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  margin: .25rem 0;
   max-width: 60%;
 }
 
@@ -60,5 +61,5 @@ input {
 
 .author-row button {
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-import "./Author-page.css";
+import "./AuthorPage.css";
 
 const AuthorPage = () => {
   const { authorId } = useParams();
