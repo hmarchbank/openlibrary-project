@@ -1,47 +1,50 @@
 .search-form {
   background: grey;
   width: 80%;
-  margin: 0 auto 4vw auto;
+  margin: 0 auto 1vw auto;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   text-align: start;
-  border: 0.2rem solid white;
+  border: 0.1rem solid white;
 }
 
 .search-inputs,
 #errorMessage {
   width: 80%;
-  margin: 1.2rem auto;
-  padding: 1rem;
-  border: 0.5rem solid white;
+  margin: .6rem auto;
+  padding: .5rem;
+  border: 0.25rem solid white;
+  box-shadow: 2.5px 5px #c0aeae;
 }
 
 .search-form h1 {
-  font-size: 2.5rem;
+  font-size: 1rem;
   max-width: 60%;
 }
 
 label,
 input {
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: 1.25rem;
+  margin: .75rem 0;
 }
 
 select {
-  font-size: 1.5rem;
+  margin: .75rem 0;
+  font-size: 1.25rem;
 }
 
 input {
   width: 80%;
-  padding: 0.4rem;
+  padding: 0.2rem;
 }
 
 #errorMessage {
-  padding: 2rem;
+  padding: 1rem;
   color: rgb(255, 208, 0);
   background: grey;
   width: 80%;
   margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .author-row {
@@ -50,9 +53,9 @@ input {
   justify-content: space-between;
   width: 80%;
   margin: 1.2rem auto;
-  padding: 1rem;
-  border: 0.5rem solid white;
-  box-shadow: 5px 10px #c0aeae;
+  padding: .6rem;
+  border: 0.25rem solid white;
+  box-shadow: 2.5px 5px #c0aeae;
 }
 
 .author-row button {
