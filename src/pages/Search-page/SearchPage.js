@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import debounce from "lodash.debounce";
+import { useCallback, useEffect, useState } from "react";
 
 import AuthorRow from "../../components/AuthorRow";
 import './SearchPage.css'
@@ -57,6 +57,10 @@ const Main = () => {
         }
     };
 
+    const debouncedHandleSearch = useCallback(
+        debounce(handleSearch, 300)
+    , [])
+
     return (
         <>
             <h1>OpenLibrary Author Searcher</h1>
@@ -68,7 +72,7 @@ const Main = () => {
                 <input
                     id="input"
                     placeholder="Author name e.g. 'Nick Schrute'"
-                    onChange={(e) => handleSearch(e, "input")}
+                    onChange={(e) => debouncedHandleSearch(e, "input")}
                     ></input>
             </label><br/>
             <label>
