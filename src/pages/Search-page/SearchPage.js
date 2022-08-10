@@ -17,7 +17,7 @@ const SearchPage = () => {
     search();
   }, [searchTerm, resultNumbers]);
 
-  const search = (() => {
+  const search = () => {
     if (searchTerm) {
       axios
         .get(
@@ -37,7 +37,7 @@ const SearchPage = () => {
           setErrorMessage(`Error retrieving authors from DB - ${err.message}.`);
         });
     }
-  });
+  };
 
   const handleSearch = (event, type) => {
     event.preventDefault();
@@ -51,7 +51,7 @@ const SearchPage = () => {
         setErrorMessage(null);
         setSearchResults([]);
       } else if (currentSearch.match(/^[A-Z-a-z\s]*$/)) {
-        setSearchResults([])
+        setSearchResults([]);
         setSearchTerm(currentSearch);
       } else {
         setErrorMessage(

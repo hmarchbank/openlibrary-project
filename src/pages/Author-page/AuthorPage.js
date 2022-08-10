@@ -42,7 +42,7 @@ const AuthorPage = () => {
                 {!authorDetails.death_date && authorDetails.birth_date
                   ? " - present"
                   : ""}
-                {authorDetails.death_date ? authorDetails.death_date : ""}
+                {authorDetails.death_date ? ` - ${authorDetails.death_date}` : ""}
               </h5>
             </div>
             <div className="details-container">
