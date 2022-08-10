@@ -41,6 +41,7 @@ const SearchPage = () => {
 
   const handleSearch = (event, type) => {
     event.preventDefault();
+    setErrorMessage("Loading...")
     const currentSearch = event.target.value;
     if (type === "select") {
       setResultNumbers(currentSearch);
@@ -62,7 +63,7 @@ const SearchPage = () => {
   };
 
   const debouncedHandleSearch = useCallback(debounce(handleSearch, 200), [
-    searchTerm,
+    searchTerm
   ]);
 
   return (
