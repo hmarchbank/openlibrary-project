@@ -29,6 +29,7 @@ const SearchPage = () => {
               "Your query returned 0 results, please try another query."
             );
           } else {
+            setErrorMessage(null);
             setSearchResults(response.data.docs);
           }
         })
@@ -50,7 +51,7 @@ const SearchPage = () => {
         setErrorMessage(null);
         setSearchResults([]);
       } else if (currentSearch.match(/^[A-Z-a-z\s]*$/)) {
-        setErrorMessage(null);
+        setSearchResults([])
         setSearchTerm(currentSearch);
       } else {
         setErrorMessage(
